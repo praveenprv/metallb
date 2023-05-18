@@ -36,7 +36,7 @@ namespace.yaml
 * L2Advertisement is a feature in MetalLB that allows you to advertise your Kubernetes services using layer 2 (L2) addressing. When you create a Kubernetes service in a cluster, MetalLB can automatically assign it an IP address from a pool of available addresses, and then advertise that address to the local network using the Address Resolution Protocol (ARP). Other devices on the network can then use this address to connect to the service.
 
 ### Source code
-All the codes have been documented in TFS GitHub - https://github.com/praveenprv/metallb
+All the codes have been documented in GitHub - https://github.com/praveenprv/metallb
 
 ### Conclusion
 MetalLB is a load balancer implementation for Kubernetes clusters that provides network load balancing functionality. It allows Kubernetes services to be exposed outside the cluster by assigning them IP addresses from a configured address pool. By installing MetalLB in a Kubernetes cluster, users can easily create and manage load balancers for their applications without relying on external load balancing solutions. MetalLB supports both Layer 2 and BGP routing modes and can be used in a wide range of deployment scenarios. Overall, MetalLB is a powerful and flexible load balancer solution for Kubernetes that is well-suited for a wide range of use cases, from small-scale deployments to large enterprise-level clusters. When creating a Kubernetes service with type: LoadBalancer, MetalLB can be used to assign an external IP address to the service. This IP address will be selected from the IP address pool that is configured in MetalLB.
