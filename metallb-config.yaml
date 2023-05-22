@@ -7,7 +7,7 @@ spec:
   ipAddressPools:
   - first-pool
 
-root@sci-mlops00:~/praveen/metallb# cat namespace.yaml
+---
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -16,9 +16,8 @@ metadata:
     pod-security.kubernetes.io/enforce: privileged
     pod-security.kubernetes.io/warn: privileged
   name: metallb-system
-root@sci-mlops00:~/praveen/metallb#
-root@sci-mlops00:~/praveen/metallb#
-root@sci-mlops00:~/praveen/metallb# cat metallb-config.yaml
+
+---
 apiVersion: v1
 kind: Namespace
 metadata:
