@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   namespace: metallb-system
   name: metallb
-data
+data:
   config: |
     address-pools:
     - name: default
